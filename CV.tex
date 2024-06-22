@@ -1,0 +1,136 @@
+\documentclass[12pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym} % includes euro symbol
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+
+\input{glyphtounicode}
+\pdfgentounicode = 1
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\raggedright
+
+\setlength{\tabcolsep}{0in}
+
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]
+
+\titleformat{\section}{\vspace{-12pt}\large}{}{0pt}{}[\titlerule]
+
+\newcommand{\newCollege}[4]{
+  \item
+  \vspace{-6pt}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\ #3 & #4 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\newJobTitle}[4]{
+    \item
+    \vspace{-6pt}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\ #3 & #4 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\newProjectTitle}[1]{
+    \item
+    \vspace{-6pt}
+    \textbf{#1}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\SubItem}[1]{\Item{#1}\vspace{-4pt}}
+\newcommand{\SectionListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\SectionListEnd}{\end{itemize}}
+\newcommand{\BulletListStart}{\begin{itemize}}
+\newcommand{\BulletListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\huge Aaryaman Sharma}
+    \\ \vspace{8pt}
+    +4407984946199
+    \hspace{0.15in}
+    \href{mailto:aaryaman1409@gmail.com}{aaryaman1409@gmail.com}
+    \hspace{0.15in}
+    \href{https://aaryaman.uk}{aaryaman.uk}
+    \hspace{1.15in}
+    \mbox{London, United Kingdom}
+\end{center}
+
+\section{\textbf{Education}}
+
+\SectionListStart
+\newCollege
+{University College London (UCL)}{Sept 2021 -- June 2024}{Bachelor of Science in Computer Science}{London, United Kingdom}
+
+\vspace{-6pt}
+\begin{itemize}[leftmargin=0.17in]
+    \item Grade Average: First Class Honours
+\end{itemize}
+
+\SectionListEnd
+
+\section{\textbf{Experience}}
+\SectionListStart
+
+\newJobTitle
+{Software Engineer Intern}{June 2023 -- Sept 2023}{Expedia Group}{London, United Kingdom}
+
+\vspace{-6pt}
+\begin{itemize}[leftmargin=0.17in]
+    \item Worked on performance analytics tool in Node.js, enabling measurement of web application performance metrics and automated blocking of GitHub PRs upon degradation detection
+    \item Carried out scoring strategy experiments to reduce false positive rates due to environment variability, achieving a 20\% improvement
+    \item Enhanced logs providing performance improvement suggestions based on specific degradation causes
+    \item Designed and prototyped tool's user interface in Figma, carrying out demos at team meetings to gather feedback and integrate suggestions such as side-by-side performance comparisons
+    \item Implemented UI using native web components with Google Lit and deployed for internal use
+\end{itemize}
+
+\newJobTitle
+{Software Engineer Intern}{June 2022 -- Sept 2022}{Qatar Museums}{Doha, Qatar}
+
+\vspace{-6pt}
+\begin{itemize}[leftmargin=0.17in]
+    \item Created a user-friendly GUI tool in Python for staff to efficiently manage digital assets, metadata, manifest files, and data imports, streamlining workflow processes
+    \item Collaborated with Microsoft and Intelligencia France on a website chatbot, solving problems such as integrating real-time museum information into chatbot
+    \item Contributed to Intelligencia's asset knowledge mining tool, doing research and testing on object detection for museum artwork with YOLOv5
+\end{itemize}
+
+\SectionListEnd
+
+\section{\textbf{Projects}}
+\SectionListStart
+
+\newProjectTitle
+{Touchless Kiosks}
+
+Designed touchless hospital kiosk interface, enabling hand gesture input for webpages via MediaPipe. Gave a demonstration at Great Ormond Street Hospital, improving accessibility features based on their suggestions. Can be installed into browser as a sidebar extension and shows live preview of user's hands and detected gestures. \href{https://students.cs.ucl.ac.uk/2022/group37/}{Available here.}
+
+\newProjectTitle
+{Jellyfin Plugin}
+
+Created an artwork and metadata scraping plugin, written in C\# and JavaScript, for open-source media library manager Jellyfin. Makes use of the Jellyfin API to present a customizable scraper to the user. \href{https://github.com/Aaryaman-1409/jellyfin-plugin-onepace}{Available here.}
+
+\SectionListEnd
+
+\section{\textbf{Skills}}
+\vspace{-5pt}
+
+\begin{itemize}[leftmargin=0in, label={}]
+    {\item
+          \textbf{Languages:}{ Python, JavaScript, TypeScript, C\#, Java, HTML, CSS} \\ \vspace{2pt}
+          \textbf{Frameworks/Libraries:}{ React, Node.js, Lit, Django, Flask} \\ \vspace{2pt}
+          \textbf{Development:}{ Git, SQL, PostgreSQL, Docker, Figma}}
+\end{itemize}
+
+\end{document}
