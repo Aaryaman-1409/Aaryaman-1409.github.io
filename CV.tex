@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -6,6 +6,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
+\RequirePackage{fontawesome}
 
 \input{glyphtounicode}
 \pdfgentounicode = 1
@@ -53,19 +54,22 @@
 \newcommand{\SectionListEnd}{\end{itemize}}
 \newcommand{\BulletListStart}{\begin{itemize}}
 \newcommand{\BulletListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\Seperator}{\hspace{0.075in}$\vert$\hspace{0.075in}}
 
 \begin{document}
 
 \begin{center}
-    \textbf{\huge Aaryaman Sharma}
-    \\ \vspace{8pt}
-    +4407984946199
-    \hspace{0.15in}
-    \href{mailto:aaryaman1409@gmail.com}{aaryaman1409@gmail.com}
-    \hspace{0.15in}
-    \href{https://aaryaman.uk}{aaryaman.uk}
-    \hspace{0.15in}
-    \mbox{London, United Kingdom}
+      \textbf{\huge Aaryaman Sharma}
+      \\ \vspace{8pt}
+      \href{mailto:aaryaman1409@gmail.com}{aaryaman1409@gmail.com}
+      \Seperator
+      \href{tel:4407984946199}{+4407984946199}
+      \Seperator
+      \mbox{London, United Kingdom}
+      \Seperator
+      \href{https://linkedin.com/in/aaryaman1409}{in/aaryaman1409}
+      \Seperator
+      \href{https://aaryaman.uk}{aaryaman.uk}
 \end{center}
 
 \section{\textbf{Education}}
@@ -76,8 +80,8 @@
 
 \vspace{-6pt}
 \begin{itemize}[leftmargin=0.17in]
-    \item Relevant Modules: Systems Engineering, Algorithms, Security, Financial Management
-    \item Dissertation: \it{"Generating Novel Motions Based on a Single Training Example"}
+      \item Relevant Modules: Systems Engineering, Algorithms, Security, Financial Management
+      \item Dissertation: \it{"Generating Novel Motions Based on a Single Training Example"}
 \end{itemize}
 
 \SectionListEnd
@@ -90,14 +94,14 @@
 
 \vspace{-6pt}
 \begin{itemize}[leftmargin=0.17in]
-    \setlength\itemsep{-0.05em}
-    \item Engineered a performance analytics tool for web applications in Node.js, enabling measurement of core web vitals
-          and automating the blocking of GitHub pull requests upon degradation detection
-    \item Implemented anomaly detection, reducing false positive rates of performance degradations by 20%
-    \item Enhanced logs by providing performance improvement suggestions based on specific degradation causes
-    \item Designed a front-end prototype in Figma to visualize performance history over time and led cross-departmental
-          demos to assess suitability and gather feedback
-    \item Developed a front-end using native web components with Google Lit and deployed it for internal company use
+      \setlength\itemsep{-0.05em}
+      \item Engineered a performance analytics tool for web applications in Node.js, enabling measurement of core web vitals
+            and automating the blocking of GitHub pull requests upon degradation detection
+      \item Implemented anomaly detection, reducing false positive rates of performance degradations by 20%
+      \item Enhanced logs by providing performance improvement suggestions based on specific degradation causes
+      \item Designed a front-end prototype in Figma to visualize performance history over time and led cross-departmental
+            demos to assess suitability and gather feedback
+      \item Developed a front-end using native web components with Google Lit and deployed it for internal company use
 \end{itemize}
 
 \newJobTitle
@@ -105,12 +109,12 @@
 
 \vspace{-6pt}
 \begin{itemize}[leftmargin=0.17in]
-    \setlength\itemsep{-0.05em}
-    \item Developed a user-friendly GUI tool in Python for staff to efficiently manage digital assets, metadata, manifest files,
-          and data imports
-    \item Integrated functionalities for sending email notifications upon job completion, enhancing communication and
-          workflow efficiency
-    \item Contributed to asset knowledge mining tool by testing object detection for museum artwork using YOLOv5
+      \setlength\itemsep{-0.05em}
+      \item Developed a user-friendly GUI tool in Python for staff to efficiently manage digital assets, metadata, manifest files,
+            and data imports
+      \item Integrated functionalities for sending email notifications upon job completion, enhancing communication and
+            workflow efficiency
+      \item Contributed to asset knowledge mining tool by testing object detection for museum artwork using YOLOv5
 \end{itemize}
 
 \SectionListEnd
@@ -119,47 +123,47 @@
 \SectionListStart
 
 \newProjectTitle
-{WebGL 3D Shader}
+{\href{https://uclcg.aaryaman.uk} {WebGL 3D Shader \faExternalLink}}
 \begin{itemize}[leftmargin=0.17in]
-    \setlength\itemsep{-0.05em}
-    \item Developed a 3D shader from scratch in GLSL, implementing Ray Tracing, Rasterization, and Path Tracing techniques
-    \item Enabled real-time visualization of advanced rendering methods directly in the browser
-    \item Incorporated real-time animation to demonstrate path-tracing progress and animated ray-traced objects
+      \setlength\itemsep{-0.05em}
+      \item Developed a 3D shader from scratch in GLSL, implementing Ray Tracing, Rasterization, and Path Tracing techniques
+      \item Enabled real-time visualization of advanced rendering methods directly in the browser
+      \item Incorporated real-time animation to demonstrate path-tracing progress and animated ray-traced objects
 \end{itemize}
 
 \newProjectTitle
-{Touchless Kiosks}
+{\href{https://touchlesskiosks.aaryaman.uk}{Touchless Kiosks \faExternalLink}}
 
 \begin{itemize}[leftmargin=0.17in]
-    \setlength\itemsep{-0.05em}
-    \item Designed and developed a touchless hospital kiosk interface using MediaPipe and React, enabling hand gesture
-          input for webpage navigation
-    \item Implemented touchless navigation and live gesture previews, with a WebExtension frontend for seamless
-          integration
-    \item  Demonstrated the system at Great Ormond Street Hospital and incorporated feedback to enhance accessibility
-          features
-    \item Enabled installation as a browser sidebar extension, showcasing live previews of user gestures and interactions
+      \setlength\itemsep{-0.05em}
+      \item Designed and developed a touchless hospital kiosk interface using MediaPipe and React, enabling hand gesture
+            input for webpage navigation
+      \item Implemented touchless navigation and live gesture previews, with a WebExtension frontend for seamless
+            integration
+      \item  Demonstrated the system at Great Ormond Street Hospital and incorporated feedback to enhance accessibility
+            features
+      \item Enabled installation as a browser sidebar extension, showcasing live previews of user gestures and interactions
 \end{itemize}
 
 \newProjectTitle
 {Jellyfin Plugin}
 
 \begin{itemize}[leftmargin=0.17in]
-    \setlength\itemsep{-0.05em}
-    \item  Developed an artwork and metadata scraping plugin in C\# and JavaScript for the open-source media library
-          manager Jellyfin
-    \item Collaborated with open-source contributors on GitHub, discussing feature requests, implementations, and
-          managing pull requests
+      \setlength\itemsep{-0.05em}
+      \item  Developed an artwork and metadata scraping plugin in C\# and JavaScript for the open-source media library
+            manager Jellyfin
+      \item Collaborated with open-source contributors on GitHub, discussing feature requests, implementations, and
+            managing pull requests
 \end{itemize}
 
 \newProjectTitle
-{Set Permutation Generator}
+{\href{https://permgenerator.aaryaman.uk}{Set Permutation Generator \faExternalLink}}
 \begin{itemize}[leftmargin=0.17in]
-    \setlength\itemsep{-0.05em}
-    \item  Built a Django-based revision tool for discrete math students to generate and analyze set permutations in Cauchy's
-          two-line notation
-    \item  Enabled functionality to compute the order, sign, and cyclic form of permutations, providing detailed problem-
-          solving capabilities
+      \setlength\itemsep{-0.05em}
+      \item  Built a Django-based revision tool for discrete math students to generate and analyze set permutations in Cauchy's
+            two-line notation
+      \item  Enabled functionality to compute the order, sign, and cyclic form of permutations, providing detailed problem-
+            solving capabilities
 \end{itemize}
 
 \SectionListEnd
@@ -168,10 +172,10 @@
 \vspace{-5pt}
 
 \begin{itemize}[leftmargin=0in, label={}]
-    {\item
-          \textbf{Languages:}{ Python, JavaScript, TypeScript, C\#, Java, C, GLSL, HTML, CSS} \\ \vspace{2pt}
-          \textbf{Frameworks/Libraries:}{ React, Node.js, Lit, Django, Flask} \\ \vspace{2pt}
-          \textbf{Development:}{ Git, SQL, PostgreSQL, Docker, Figma}}
+      {\item
+            \textbf{Languages:}{ Python, JavaScript, TypeScript, C\#, Java, C, GLSL, HTML, CSS} \\ \vspace{2pt}
+            \textbf{Frameworks/Libraries:}{ React, Node.js, Lit, Django, Flask} \\ \vspace{2pt}
+            \textbf{Development:}{ Git, SQL, PostgreSQL, Docker, Figma}}
 \end{itemize}
 
 \end{document}
